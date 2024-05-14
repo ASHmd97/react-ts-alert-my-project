@@ -38,7 +38,7 @@ const Alert = ({ type = "danger", title, description, children }: IProps) => {
         </div>
         <X className="close" size={20} />
       </div>
-      {children ? children : <p>{description}</p>}
+      <div className="body">{children ? children : <p>{description}</p>}</div>
     </div>
   );
 };
