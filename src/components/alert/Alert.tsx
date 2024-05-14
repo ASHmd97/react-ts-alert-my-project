@@ -8,15 +8,16 @@ import {
 } from "lucide-react";
 import "./index.scss";
 import { ReactNode } from "react";
+import { alertTypes } from "../../types";
 
 interface IProps {
-  type: string;
+  type: alertTypes;
   title: string;
   description?: string;
   children?: ReactNode;
 }
 
-const Alert = ({ type = "danger", title, description, children }: IProps) => {
+const Alert = ({ type = "info", title, description, children }: IProps) => {
   let icon;
   if (type === "error") {
     icon = <Ban size={20} />;

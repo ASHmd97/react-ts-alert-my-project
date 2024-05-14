@@ -12,6 +12,9 @@ function App() {
         </p>
       </Alert>
 
+      <Alert type="success" title="Types of alerts has been processed"
+      description="Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+
       <Alert
         type="info"
         title="Note"
